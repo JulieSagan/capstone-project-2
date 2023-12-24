@@ -1,0 +1,132 @@
+@font-face {
+    font-family: SuisseIntl;
+    src: url(./font/SuisseIntl-Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: SuisseIntl;
+    src: url(./font/SuisseIntl-Medium.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SuisseIntl;
+    src: url(./font/SuisseIntl-Thin.otf) format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #f8fde3;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(auto, 100px);
+}
+
+.nav-items {
+    grid-area: 1 / 4 / 1 / 6;
+}
+
+p {
+    color: #e233ab;
+    font-family: SuisseIntl;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+.transparent {
+    color: #e233ab80;
+    margin-bottom: 30px;
+}
+
+.regular {
+    margin-top: 20px;
+}
+
+h1{
+    color: #e233ab;
+    font-family: SuisseIntl;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    grid-column: span 8;
+    margin-bottom: 100px;
+}
+
+.text {
+    grid-area: 6 / 4 / 6 / 8;
+    margin-bottom: 80px;
+}
+
+h2 {
+    color: #e233ab;
+    font-family: SuisseIntl;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 2.5rem;
+    padding: 0;
+    margin: 0 0 100px 0;
+    
+}
+
+.my {
+    border-radius: 50%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e233ab;
+    font-family: SuisseIntl;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+@media (max-width: 960px) {
+    h1{
+        color: #e233ab;
+        font-family: SuisseIntl;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 5rem;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-items {
+        grid-area: 1 / 2 / 1 / 4;
+    }
+
+    .text {
+        grid-area: 6 / 2 / 6 / 8;
+        margin-bottom: 80px;
+    }
+
+    .my {
+        border-radius: 50%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+}
